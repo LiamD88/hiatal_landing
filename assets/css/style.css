@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+}
+
+.navbar-brand {
+    font-family: "Bangers", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+}
+
 .hero-image {
     height: 25em; /* equivalent to 400px */
     overflow: hidden;
