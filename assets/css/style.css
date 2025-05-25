@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-.bangers-regular {
-    font-family: "Bangers", system-ui;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.8em;
-    letter-spacing: 0.05em;
+:root {
+    --color-black: #0B0C10;
+    --color-dark-blue-grey: #1F2833;
+    --color-light-grey: #C5C6C7;
+    --color-bright-aqua: #66FCF1;
+    --color-teal-green: #45A29E;
+
+    --background-color: var(--color-black);
+    --card-background: var(--color-dark-blue-grey);
+    --text-color-primary: var(--color-light-grey);
+    --text-color-secondary: var(--color-teal-green);
+    --accent-color: var(--color-bright-aqua);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+}
+
+.navbar {
+    background-color: var(--background-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .navbar-brand {
@@ -15,6 +31,7 @@
     font-style: normal;
     font-size: 1.8em;
     letter-spacing: 0.05em;
+    color: var(--accent-color) !important;
 }
 
 .hero-image {
@@ -40,13 +57,13 @@
 .hero-text h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
-    color: #333;
+    color: var(--accent-color);
     font-weight: 700;
 }
 
 .hero-text p {
     font-size: 1.25em;
-    color: #666;
+    color: var(--text-color-secondary);
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -66,13 +83,13 @@
 .features-section .intro-text {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-color-primary);
     margin-bottom: 1.5em;
 }
 
 .features-section h2 {
     font-size: 1.8em;
-    color: #333;
+    color: var(--accent-color);
     margin-bottom: 1em;
     text-align: center;
 }
@@ -85,7 +102,7 @@
 
 .features-list li {
     font-size: 1.1em;
-    color: #555;
+    color: var(--text-color-primary);
     padding: 0.5em 0;
     position: relative;
     padding-left: 1.5em;
@@ -93,7 +110,7 @@
 
 .features-list li:before {
     content: "•";
-    color: #007bff;
+    color: var(--accent-color);
     font-size: 1.5em;
     position: absolute;
     left: 0;
@@ -103,21 +120,23 @@
 .support-text {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-color-primary);
     margin: 2em 0;
     text-align: center;
 }
 
 .app-features {
-    background-color: #f8f9fa;
+    background-color: var(--card-background);
     padding: 1.5em;
     border-radius: 0.5em;
     margin: 2em 0;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .app-features p {
     font-size: 1.1em;
-    color: #444;
+    color: var(--text-color-primary);
     margin: 0.5em 0;
     display: flex;
     align-items: center;
@@ -126,7 +145,7 @@
 
 .download-text {
     font-size: 1.2em;
-    color: #333;
+    color: var(--accent-color);
     text-align: center;
     font-weight: 500;
     margin-top: 1.5em;
@@ -151,4 +170,11 @@
     width: 100%;
     height: auto;
     border-radius: 0.5em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+footer {
+    background-color: var(--card-background) !important;
+    color: var(--text-color-secondary);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
