@@ -178,3 +178,20 @@ footer {
     color: var(--text-color-secondary);
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+
+/* Mobile View Adjustments */
+@media (max-width: 991.98px) { /* Corresponds to Bootstrap's 'lg' breakpoint */
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-collapse {
+        display: none !important;
+    }
+}
